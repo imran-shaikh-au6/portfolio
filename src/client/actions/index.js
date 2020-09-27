@@ -1,48 +1,48 @@
 import {
-    BASE_URL, 
+    BASE_URL,
     SKILLS_ENDPOINT,
     PROJECTS_ENDPOINT,
     BLOGS_ENDPOINT,
     FETCH_SKILLS_SETS,
     FETCH_PROJECTS,
-    FETCH_BLOGS
-} from './constants';
+    FETCH_BLOGS,
+} from "./constants";
 
-export const dispatchSkillSets = data => ({
+export const dispatchSkillSets = (data) => ({
     type: FETCH_SKILLS_SETS,
-    payload: data
+    payload: data,
 });
 
-export const dispatchProjects = data => ({
+export const dispatchProjects = (data) => ({
     type: FETCH_PROJECTS,
-    payload: data
+    payload: data,
 });
 
-export const dispatchBlogs = data => ({
+export const dispatchBlogs = (data) => ({
     type: FETCH_BLOGS,
-    payload: data
+    payload: data,
 });
 
-export const fetchSkillSets = () => dispatch => {
-    fetch(BASE_URL+SKILLS_ENDPOINT)
-    .then(response =>  response.json())
-    .then(data => {
-       dispatch(dispatchSkillSets(data));
-    })
-}
+export const fetchSkillSets = () => (dispatch) => {
+    fetch(SKILLS_ENDPOINT)
+        .then((response) => response.json())
+        .then((data) => {
+            dispatch(dispatchSkillSets(data));
+        });
+};
 
-export const fetchProjects = () => dispatch => {
-    fetch(BASE_URL+PROJECTS_ENDPOINT)
-    .then(response =>  response.json())
-    .then(data => {
-       dispatch(dispatchProjects(data));
-    })
-}
+export const fetchProjects = () => (dispatch) => {
+    fetch(PROJECTS_ENDPOINT)
+        .then((response) => response.json())
+        .then((data) => {
+            dispatch(dispatchProjects(data));
+        });
+};
 
-export const fetchBlogs = () => dispatch => {
-    fetch(BASE_URL+BLOGS_ENDPOINT)
-    .then(response =>  response.json())
-    .then(data => {
-       dispatch(dispatchBlogs(data));
-    })
-}
+export const fetchBlogs = () => (dispatch) => {
+    fetch(BLOGS_ENDPOINT)
+        .then((response) => response.json())
+        .then((data) => {
+            dispatch(dispatchBlogs(data));
+        });
+};
