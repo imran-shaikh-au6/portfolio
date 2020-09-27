@@ -4,7 +4,13 @@ var mongoose = require("mongoose");
 
 var Blogs = require("./blogs");
 mongoose.connect(
-    "mongodb+srv://imran:12345@cluster0.rebng.mongodb.net/portfolio?retryWrites=true&w=majority"
+    "mongodb+srv://imran:12345@cluster0.rebng.mongodb.net/portfolio?retryWrites=true&w=majority",
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useFindAndModify: false,
+        useCreateIndex: true,
+    }
 );
 
 router.get("/", (req, res) => {
