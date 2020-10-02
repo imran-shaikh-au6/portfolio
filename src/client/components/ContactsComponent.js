@@ -19,11 +19,17 @@ class ContactsComponent extends React.Component {
         return (
             <div className={"contacts-contents-container"}>
                 <h3>Contact No: +91 9423932373</h3>
-                <button style={{height:"50px", width:"130px",backgroundColor:"Black"}}>
+                <button
+                    style={{
+                        height: "50px",
+                        width: "130px",
+                        backgroundColor: "Black",
+                    }}
+                >
                     <a
-                        href="https://drive.google.com/file/d/14hzGHALq0TFVp7REDcym83b6Z8_10skh/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1tlJpCYVPNaUD84C7R7Y5YwdydWUMSG9k/view?usp=sharing"
                         target="_blank"
-                        style={{color:"white",textDecoration:"none"}}
+                        style={{ color: "white", textDecoration: "none" }}
                     >
                         Download Resume
                     </a>
