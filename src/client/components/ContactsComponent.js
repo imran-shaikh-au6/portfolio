@@ -27,7 +27,7 @@ class ContactsComponent extends React.Component {
                     }}
                 >
                     <a
-                        href="https://drive.google.com/file/d/1tlJpCYVPNaUD84C7R7Y5YwdydWUMSG9k/view?usp=sharing"
+                        href="#/"
                         target="_blank"
                         style={{ color: "white", textDecoration: "none" }}
                     >
