@@ -30,5 +30,4 @@ Open http://localhost:9002 to view it in the browser.
 
 
 
-### License
-This project is licensed under the [MIT License](LICENSE)
+
